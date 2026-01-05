@@ -13,7 +13,8 @@ body{
     
 }
 h1{
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    margin: 20px 10px 20px 0;
 }
 
 nav{
@@ -60,7 +61,7 @@ nav li{
     list-style:none;
     padding: .75em 2em;
     margin: .3em 0.02em;
-    font-size: 90%;
+    font-size: 80%;
     flex-wrap: wrap;
     
     transition: all 0.5s;
@@ -90,5 +91,9 @@ a:hover{
 }
 
 article{
-    margin: 0 2vw 0 30vw;
+    margin: 0 30vw 0 2vw;
+}
+#block{
+    margin-top: 2vw;
+    border: 1mm solid rgb(32, 10, 10);
 }
