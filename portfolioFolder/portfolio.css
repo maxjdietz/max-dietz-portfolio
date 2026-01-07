@@ -16,6 +16,10 @@ h1{
     font-family:'Courier New', Courier, monospace;
     margin: 20px 10px 20px 0;
 }
+#front{
+    margin: 10px;
+    font-size: 100%
+}
 
 nav{
     box-shadow: 10px 10px 10px 5px rgb(75, 74, 74);
@@ -93,7 +97,19 @@ a:hover{
 article{
     margin: 0 30vw 0 2vw;
 }
-#block{
+.block{
     margin-top: 2vw;
-    border: 1mm solid rgb(32, 10, 10);
+    margin-left: 2vw;
+    width: 60vw;
+    border: 2mm solid rgb(32, 10, 10);
+    height: 2vw;
+    transition: all 1s;
+    overflow: auto;
+}
+
+.block:hover{
+    transition: all 0.5s;
+    height: 30vw;
+     
+
 }
