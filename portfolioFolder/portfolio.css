@@ -106,11 +106,16 @@ a:hover{
 article{
     margin: 0 30vw 0 2vw;
 }
+.container{
+    display: flex;
+    justify-content: space-between; /* Optional: Distributes space between elements */
+}
 .block{
+    flex: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 1vw;
+    /* margin-top: 1vw; */
     margin-left: 2vw;
     width: 60vw;
     border: 2mm solid rgb(32, 10, 10);
@@ -118,19 +123,30 @@ article{
     transition: all 1s;
     overflow: auto;
 }
+.side{
+    margin: 10px;
+    flex: 1;
+    height: 1vw;
+    border: 1mm solid black;
+    transition: all 0.5s;
+}
 
+.side:hover{
+    height: 30vw;
+}
 img{
-    height: 200px;
+    height: 250px;
 }
 .item{
     background-color: #f1f1f1; /* Example background for items */
     border: 1px solid black;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     box-sizing: border-box;
-    height: 19vw;
+    height: 18.5vw;
 
 }
 /* .item:hover{
     width: 70vw;
 } */
+
