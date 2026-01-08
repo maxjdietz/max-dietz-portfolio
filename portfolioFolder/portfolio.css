@@ -16,6 +16,15 @@ h1{
     font-family:'Courier New', Courier, monospace;
     margin: 20px 10px 20px 0;
 }
+h2{
+    margin-top: 2vw;
+    margin-left: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
 #front{
     margin: 10px;
     font-size: 100%
@@ -98,18 +107,30 @@ article{
     margin: 0 30vw 0 2vw;
 }
 .block{
-    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1vw;
     margin-left: 2vw;
     width: 60vw;
     border: 2mm solid rgb(32, 10, 10);
-    height: 2vw;
+    height: 37vw;
     transition: all 1s;
     overflow: auto;
 }
 
-.block:hover{
-    transition: all 0.5s;
-    height: 30vw;
-     
+img{
+    height: 200px;
+}
+.item{
+    background-color: #f1f1f1; /* Example background for items */
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 19vw;
 
 }
+/* .item:hover{
+    width: 70vw;
+} */
