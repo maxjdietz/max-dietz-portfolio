@@ -169,30 +169,37 @@ article{
     overflow:hidden;
     margin: 50px;
     margin-left: 35vw;
+    padding-right: 0vw;
+    padding-left: 1vw;
     /* margin-left: 35vw; */
     background-color: white;
     /* margin: 10px; */
     flex: 1;
     /* padding: 10vw; */
     height: 14vw;
-    width: 22.5vw;
+    width: 25vw;
     border: 2mm solid black;
     transition: all 0.5s;
     overflow-y: scroll;
+
 }
 
 .side:hover{
     /* height: 30vw; */
-     margin: 50px;
-     width: 93vw;
+     margin: 10px;
+     width: 90vw;
      height: 23vw;
 }
 img{
+    width: 20vw;
+    height: auto;
+    /* width: 50%;
+    width: 50%; */
     border-radius: 10%;
     border: 1mm solid black;
     margin: 10px;
     height: 205px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 /* img:hover{
     height: 300px;
