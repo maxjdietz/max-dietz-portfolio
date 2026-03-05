@@ -178,6 +178,7 @@ article{
     width: 22.5vw;
     border: 2mm solid black;
     transition: all 0.5s;
+    overflow-y: scroll;
 }
 
 .side:hover{
