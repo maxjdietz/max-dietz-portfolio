@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    background-color: white;
+    background-color: rgb(117, 237, 171);
 }
 
 
@@ -13,13 +13,24 @@ body{
     
 }
 h1{
+    text-decoration:wavy;
+    font-size: 250%;
     font-family:'Courier New', Courier, monospace;
     margin: 20px 10px 20px 0;
 }
 h2{
+    font-family: monospace;
     margin-top: 2vw;
-    margin-left: 20vw;
+    margin-left: 2vw;
+    font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+    font-weight: 900;
+    margin: 20px;
 }
 
 
@@ -30,49 +41,54 @@ h2{
     font-size: 100%
 }
 
+h3{
+    margin-left: 20px;
+}
 nav{
-    box-shadow: 10px 10px 10px 5px rgb(75, 74, 74);
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px 10px rgb(69, 74, 66); */
    position: sticky;
     top: 0;
     
     /* box-shadow: 10px 10px 10px 10px rgb(11, 9, 9); */
     padding: .1vw;
     background-color: black;
-    border: 1mm solid black;
+    border: .25mm solid black;
     /* border-radius: 15%; */
-    
+    width:90vw;
     
     text-align: center;
     height: 70%;
-     margin: 0 auto;
+    margin: 0 auto;
     transition: all 0.5s;
   
 
 }
 nav ul {
+    /* padding-left: px; */
     font-family: monospace;
     /* border-radius: 15%; */
     justify-content: center;
     font-size: 150%;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   
 }
 
 nav li{
      /* border-radius: 15%; */
-      border: 0.5mm solid rgb(32, 10, 10);
+    border: 0.5mm solid rgb(32, 10, 10);
     color: rgb(196, 188, 188);
     background-color: white;
-    /* border-radius: 25%; */
+    border-radius: 20%;
     text-align: center;
     /* text-decoration: none; */
     list-style:none;
-    padding: .75em 2em;
+    padding: 1.1em 2.1em;
     margin: .3em 0.02em;
     font-size: 80%;
     flex-wrap: wrap;
@@ -96,6 +112,26 @@ a:visited{
     
 }
 
+p{
+}
+/* .projects{
+    font-size: 120%;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px;
+    
+} */
+.projects{
+
+   font-family: monospace;
+    border: 0.5mm solid black;
+    width: 10vw;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+
 li:hover{
     background-color: rgb(185, 213, 236);
 }
@@ -105,38 +141,62 @@ a:hover{
 
 article{
     margin: 0 30vw 0 2vw;
+    
 }
 .container{
     display: flex;
     justify-content: space-between; /* Optional: Distributes space between elements */
 }
 .block{
+    
     flex: 2;
     display: grid;
+    
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     /* margin-top: 1vw; */
     margin-left: 2vw;
     width: 60vw;
-    border: 2mm solid rgb(32, 10, 10);
+    border: 1mm solid rgb(32, 10, 10);
     height: 37vw;
     transition: all 1s;
     overflow: auto;
 }
 .side{
-    margin: 10px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 5px rgb(75, 74, 74);
+    background-color: grey;
+    overflow:hidden;
+    margin: 50px;
+    margin-left: 35vw;
+    /* margin-left: 35vw; */
+    background-color: white;
+    /* margin: 10px; */
     flex: 1;
-    height: 1vw;
-    border: 1mm solid black;
+    /* padding: 10vw; */
+    height: 14vw;
+    width: 22.5vw;
+    border: 2mm solid black;
     transition: all 0.5s;
 }
 
 .side:hover{
-    height: 30vw;
+    /* height: 30vw; */
+     margin: 50px;
+     width: 90vw;
+     height: 23vw;
 }
 img{
-    height: 250px;
+    border-radius: 10%;
+    border: 1mm solid black;
+    margin: 10px;
+    height: 205px;
+    margin-right: 10px;
 }
+/* img:hover{
+    height: 300px;
+
+} */
 .item{
     background-color: #f1f1f1; /* Example background for items */
     border: 1px solid black;
