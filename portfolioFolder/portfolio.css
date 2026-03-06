@@ -198,7 +198,7 @@ img{
     border-radius: 10%;
     border: 1mm solid black;
     margin: 10px;
-    height: 205px;
+    /* height: 205px; */
     /* margin-right: 10px; */
 }
 /* img:hover{
