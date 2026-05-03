@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Dietz - The Portfolio</title>
+    <title>Max Dietz - Designs</title>
     <link href="portfolio.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <article>
-        <header>
-            <h1>Designs!- Max Dietz</h1>
-        </header>
-            <nav>
+
+    <div class="top-bar">
+        <div class="header-wrap">
+            <img src="img/logo.png" alt="Max Dietz Logo" class="main-logo"> 
+            <header>
+                <h1>DESIGNS! - MAX DIETZ</h1>
+            </header>
+        </div>
+        
+        <nav>
             <ul>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/index.html">Featured Projects</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_gameDev.html">Game Development</a></li>
@@ -22,73 +27,74 @@
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_AboutMe.html">About Me!</a></li>
             </ul>
         </nav>
-    </article>
-    <h2>Design work:</h2>
-      <div class="side">
-            <a><img src="img/radio2.jpg"></a>
-            <a><img src="img/radio1.jpg"></a>
-            <a><img src="img/radio3.jpg"></a>
-            <a><img src="img/radio4.jpg"></a>
-            <aside>
-                <h3>Secret Society (Radio 1190, KVCU) - Fridays, 8pm
-                     <button class="projects"><a href = "https://1190.radio/schedule/">Listen Here!</a></button>
-                </h3>
-                <p>Secret Society is a Solo Radio Show that I host on KVCU every Friday! It highlights Underground, Post-Hardcore/Emo Punk music! I talk about, and we listen to, anything that I have been listening to throughout the week, check it out!!! I have 40+ episodes that have run</p></aside>
-            
-    </div>
-   <div class="side">
-            <a><img src="img/SC1.jpg"></a>
-            <a><img src="img/SC2.jpg"></a>
-            <a><img src="img/SC3.jpg"></a>
-            <a><img src="img/SC4.jpg"></a>
-            <aside>
-                <h3>Original Compositions! 
-                     <button class="projects"><a href ="https://soundcloud.com/max-dietz-442194264">Listen Here!</a></button>
-                </h3>
-                <p>I do tons of work in Ableton, especially as a Sound Design teacher! I use lots of varying techniques, including programming my own synthesizers, recording and playing my own instruments, and mixing all of it together! Check out my origi </p></aside>
-    </div>
-    <div class="side">
-            <a><img src="img/P1.jpg"></a>
-            <a><img src="img/P2.jpg"></a>
-            <a><img src="img/P3.jpg"></a>
-            <a><img src="img/P4.jpg"></a>
-            <aside>
-                <h3>Peggy and Henry!
-                     <button class="projects"><a href ="https://vimeo.com/manage/videos/1030525063">Watch Here!</a></button>
-                </h3>
-                <p>A "Cartoon" where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!  </p></aside>
-    </div>
-    <div class="side">
-            <a><img src="img/DS1.jpg"></a>
-            <a><img src="img/DS2.jpg"></a>
-            <a><img src="img/DS3.jpg"></a>
-            <a><img src="img/DS4.jpg"></a>
-            <aside>
-                <h3>Dark Souls 3 Re-Scored
-                     <button class="projects"><a href ="https://vimeo.com/manage/videos/1026766891">Watch Here!</a></button>
-                </h3>
-                <p>Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack! </p></aside>
     </div>
 
-    <!-- <div class="container">
-        <div class="block">
-            <button class="item" id="button1"><a><img src="img/WINNER.jpg"></a>
-                <p class="projects">TEST</p>
-            </button>
-            <button class="item" id="button2"><a><img src="img/WINNER.jpg"></a>
-            </button>
-            <button class="item" id="button3"><a><img src="img/WINNER.jpg"></a>
-            </button>
-            <button class="item" id="button4"><img src="img/WINNER.jpg"></a>
-            </button>
-            <h1 id="front">Featured Work:</h1> -->
-            
-        <!-- </div> -->
-      
-    <!-- </div> -->
- <script src="portfolio.js"></script>
- <footer><p>Max Dietz</p></footer>
-    
-    
+    <main>
+        <h2>Design work:</h2>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/radio2.jpg" alt="Radio 2">
+                <img src="img/radio1.jpg" alt="Radio 1">
+                <img src="img/radio3.jpg" alt="Radio 3">
+                <img src="img/radio4.jpg" alt="Radio 4">
+            </div>
+            <aside>
+                <h3>Secret Society (Radio 1190)
+                    <a href="https://soundcloud.com/max-dietz-442194264" class="projects-btn">PLAY!</a>
+                </h3>
+                <p>Secret Society is a Solo Radio Show that I host on KVCU every Friday! It highlights Underground, Post-Hardcore/Emo Punk music!</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/SC1.jpg" alt="SC 1">
+                <img src="img/SC2.jpg" alt="SC 2">
+                <img src="img/SC3.jpg" alt="SC 3">
+                <img src="img/SC4.jpg" alt="SC 4">
+            </div>
+            <aside>
+                <h3>Original Compositions! 
+                    <a href="https://soundcloud.com/max-dietz-442194264" class="projects-btn">PLAY!</a>
+                </h3>
+                <p>I do tons of work in Ableton, especially as a Sound Design teacher! I use lots of varying techniques, including programming my own synthesizers, recording and playing my own instruments, and mixing all of it together!</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/P1.jpg" alt="P 1">
+                <img src="img/P2.jpg" alt="P 2">
+                <img src="img/P3.jpg" alt="P 3">
+                <img src="img/P4.jpg" alt="P 4">
+            </div>
+            <aside>
+                <h3>Peggy and Henry!
+                    <a href="https://vimeo.com/manage/videos/1030525063" class="projects-btn">WATCH!</a>
+                </h3>
+                <p>A "Cartoon" where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/DS1.jpg" alt="DS 1">
+                <img src="img/DS2.jpg" alt="DS 2">
+                <img src="img/DS3.jpg" alt="DS 3">
+                <img src="img/DS4.jpg" alt="DS 4">
+            </div>
+            <aside>
+                <h3>Dark Souls 3 Re-Scored
+                    <a href="https://vimeo.com/manage/videos/1026766891" class="projects-btn">WATCH!</a>
+                </h3>
+                <p>Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack!</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer><p>© Max Dietz</p></footer>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>

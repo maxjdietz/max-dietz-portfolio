@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Dietz - The Portfolio</title>
+    <title>Max Dietz - Game Development</title>
     <link href="portfolio.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <article>
-        <header>
-            <h1>Game Dev - Max Dietz</h1>
-        </header>
-            <nav>
+
+    <div class="top-bar">
+        <div class="header-wrap">
+            <img src="img/logo.png" alt="Max Dietz Logo" class="main-logo"> 
+            <header>
+                <h1>GAME DEV - MAX DIETZ</h1>
+            </header>
+        </div>
+        
+        <nav>
             <ul>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/index.html">Featured Projects</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_gameDev.html">Game Development</a></li>
@@ -22,84 +27,89 @@
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_AboutMe.html">About Me!</a></li>
             </ul>
         </nav>
-    </article>
-    <h2>Game Development Work</h2>
-      <div class="side">
-            <a><img src="img/hC1.jpg"></a>
-            <a><img src="img/hC2.jpg"></a>
-            <a><img src="img/hC3.jpg"></a>
-            <a><img src="img/hC4.jpg"></a>
-            <aside>
-                <h3>Harmonic Convergence
-                     <button class="projects"><a href ="https://mjdietz04.itch.io/harmonic-convergence">Play Here!</a></button>
-                </h3>
-                <p>This audio visual project (done in Godot Engine) is a video game experience where you can meet some cool musical characters! All programming, art, animation, sound, music recordings, mixing, etc done by me!</p></aside>
-            
     </div>
 
-    <div class="side">
-            <a><img src="img/Welcome4.jpg"></a>
-            <a><img src="img/Welcome1.jpg"></a>
-            <a><img src="img/Welcome2.jpg"></a>
-            <a><img src="img/Welcome3.jpg"></a>
+    <main>
+        <h2>Game Development Work</h2>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/hC1.jpg" alt="Harmonic Convergence 1">
+                <img src="img/hC2.jpg" alt="Harmonic Convergence 2">
+                <img src="img/hC3.jpg" alt="Harmonic Convergence 3">
+                <img src="img/hC4.jpg" alt="Harmonic Convergence 4">
+            </div>
             <aside>
-                <h3>Welcome to Suburbia! (Current Capstone Project)
-                     <button class="projects"><a href ="https://mjdietz04.itch.io/welcome-to-suburbia">Play Here!</a></button>
+                <h3>Harmonic Convergence
+                    <a href="https://mjdietz04.itch.io/harmonic-convergence" class="projects-btn">Play Here!</a>
                 </h3>
-                <p>Unique 3D Psychological Multiplay Horror Game about 2 kids that are trapped in a repeating suburbian neighborhood! Still a work in progress, but features some unique systems and world design! Programming, Systems, Modeling, Technical Design, and Sound by Me! Game Design/Game Director, Programmer, Modeling by Aidan Rogers. Systems, Programming, Technical Design, Multiplayer Director: Noah Wagner. Narrative Director, Programming, Modeling, Sound: Micah Higgins. Made in: Godot </p></aside>
-    </div>
-    <div class="side">
-            <a><img src="img/SES4.jpg"></a>
-            <a><img src="img/SES5.jpg"></a>
-            <a><img src="img/SES2.jpg"></a>
-            <a><img src="img/SES1.jpg"></a>
+                <p>This audio visual project (done in Godot Engine) is a video game experience where you can meet some cool musical characters! All programming, art, animation, sound, music recordings, mixing, etc done by me!</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/Welcome4.jpg" alt="Welcome to Suburbia 4">
+                <img src="img/Welcome1.jpg" alt="Welcome to Suburbia 1">
+                <img src="img/Welcome2.jpg" alt="Welcome to Suburbia 2">
+                <img src="img/Welcome3.jpg" alt="Welcome to Suburbia 3">
+            </div>
             <aside>
-                <h3>S.E.S (group project)
-                     <button class="projects"><a href ="https://mjdietz04.itch.io/ses">Play Here!</a></button>
+                <h3>Welcome to Suburbia! (Capstone)
+                    <a href="https://mjdietz04.itch.io/welcome-to-suburbia" class="projects-btn">Play Here!</a>
                 </h3>
-                <p>Cool roguelike 3D game! Systems/technical design, Graphics, Sound done by me! Art Direction + Modeling: Adam Reyes!!! UI and Sound: Logan Brown!!! Made in: Godot</p></aside>
-    </div>
-    <div class="side">
-            <a><img src="img/guy1.jpg"></a>
-            <a><img src="img/guy2.jpg"></a>
-            <a><img src="img/guy3.jpg"></a>
-            <a><img src="img/guy4.jpg"></a>
+                <p>Unique 3D Psychological Multiplayer Horror Game. Programming, Systems, Modeling, Technical Design, and Sound by Me! Made in: Godot Engine.</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/SES4.jpg" alt="SES 4">
+                <img src="img/SES5.jpg" alt="SES 5">
+                <img src="img/SES2.jpg" alt="SES 2">
+                <img src="img/SES1.jpg" alt="SES 1">
+            </div>
+            <aside>
+                <h3>S.E.S (Group Project)
+                    <a href="https://mjdietz04.itch.io/ses" class="projects-btn">Play Here!</a>
+                </h3>
+                <p>Cool roguelike 3D game! Systems/technical design, Graphics, Sound done by me! Made in: Godot Engine.</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/guy1.jpg" alt="Guy 1">
+                <img src="img/guy2.jpg" alt="Guy 2">
+                <img src="img/guy3.jpg" alt="Guy 3">
+                <img src="img/guy4.jpg" alt="Guy 4">
+            </div>
             <aside>
                 <h3>Guy
-                     <button class="projects"><a href ="https://mjdietz04.itch.io/guy">Play Here!</a></button>
+                    <a href="https://mjdietz04.itch.io/guy" class="projects-btn">Play Here!</a>
                 </h3>
-                <p>Guy is a small art/functionality project I'm working on! It's about a guy that goes around town and does odd jobs. This game takes place in the Harmonic Convergence universe! Made in: Godot.</p></aside>
-    </div>
-    <div class="side">
-            <a><img src="img/marlow.jpg"></a>
-            <a><img src="img/marlow2.jpg"></a>
-            <a><img src="img/marlow3.jpg"></a>
-            <a><img src="img/marlow4.jpg"></a>
+                <p>Guy is a small art/functionality project I'm working on! It's about a guy that goes around town and does odd jobs. Takes place in the Harmonic Convergence universe!</p>
+            </aside>
+        </div>
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/marlow.jpg" alt="Marlow 1">
+                <img src="img/marlow2.jpg" alt="Marlow 2">
+                <img src="img/marlow3.jpg" alt="Marlow 3">
+                <img src="img/marlow4.jpg" alt="Marlow 4">
+            </div>
             <aside>
                 <h3>Marlow's Missions!
-                     <button class="projects"><a href ="https://mjdietz04.itch.io/marcos-missions">Play Here!</a></button>
+                    <a href="https://mjdietz04.itch.io/marcos-missions" class="projects-btn">Play Here!</a>
                 </h3>
-                <p>Marlows Missions! Is the first game I ever made (using twine). It's a choose-your-own-adventure game where you choose how to interact with the world, and allow Marlow to choose the right choices! There are 5 different endings, good luck!!! </p></aside>
-    </div>
-    <!-- <div class="container">
-        <div class="block">
-            <button class="item" id="button1"><a><img src="img/WINNER.jpg"></a>
-                <p class="projects">TEST</p>
-            </button>
-            <button class="item" id="button2"><a><img src="img/WINNER.jpg"></a>
-            </button>
-            <button class="item" id="button3"><a><img src="img/WINNER.jpg"></a>
-            </button>
-            <button class="item" id="button4"><img src="img/WINNER.jpg"></a>
-            </button>
-            <h1 id="front">Featured Work:</h1> -->
-            
-        <!-- </div> -->
-      
-    <!-- </div> -->
- <script src="portfolio.js"></script>
- <footer><p>Max Dietz</p></footer>
-    
-    
+                <p>The first game I ever made (using Twine). A choose-your-own-adventure game with 5 different endings. Good luck!</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer><p>© Max Dietz</p></footer>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
