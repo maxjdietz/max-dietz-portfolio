@@ -55,6 +55,7 @@ function openModal(id) {
                 
                 <h3>Technical Process</h3>
                 <p>${project.process}</p>
+    
             </div>
         </div>
     `;
