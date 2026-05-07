@@ -430,3 +430,87 @@ footer {
     opacity: 0; 
     animation-fill-mode: forwards;
 }
+
+/* Full-screen overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.98); /* Almost solid white for a clean look */
+    display: none;
+    z-index: 2000;
+    overflow-y: auto; /* Scrollable for long docs */
+}
+
+.modal-active {
+    display: block !important;
+}
+
+/* 1. Darker Backdrop */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Darkened to 90% black with a slight blur for depth */
+    background: rgba(0, 0, 0, 0.9); 
+    backdrop-filter: blur(8px);
+    display: none;
+    z-index: 2000;
+    overflow-y: auto;
+    /* Smooth fade in for the overlay itself */
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-active {
+    display: block !important;
+}
+
+/* 2. Simple Slide-up Animation for Content */
+.modal-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white; /* Contrast against the dark backdrop */
+    border: 4px solid black;
+    box-shadow: 15px 15px 0px black;
+    
+    /* The Animation */
+    animation: slideUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        transform: translateY(30px); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+/* Close Button - adjusted to stand out on dark bg */
+.close-doc {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    background: var(--accent);
+    color: black;
+    border: 3px solid black;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    box-shadow: 4px 4px 0px black;
+}
