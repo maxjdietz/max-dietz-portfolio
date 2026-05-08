@@ -8,60 +8,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="top-bar">
-    <div class="header-wrap">
-        <div class="logo-container">
-            <img src="img/guy3.jpg" alt="Logo" class="main-logo">
+
+    <div class="top-bar">
+        <div class="header-wrap">
+            <img src="img/logo.png" alt="Max Dietz Logo" class="main-logo"> 
+            <header>
+                <h1>MAX DIETZ: THE PORTFOLIO</h1>
+            </header>
         </div>
-        <header>
-            <h1>MAX DIETZ: THE PORTFOLIO</h1>
-        </header>
-    </div>
-    <nav id="main-nav">
-        <ul>
+        
+        <nav>
+            <ul>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/index.html">Featured Projects</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_gameDev.html">Game Development</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_AudioEng.html">Audio Engineering</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_MusicProd.html">Music Production</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_Design.html">Web Dev + Design</a></li>
                 <li><a href="https://maxjdietz.github.io/max-dietz-portfolio/portfolioFolder/portfolio_AboutMe.html">About Me!</a></li>
-
-        </ul>
-    </nav>
-</div>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <h2>Featured Work</h2>
-                <div class="side">
-            <div class="image-scroller">
-                <img src="img/Welcome4.jpg" alt="Project image">
-                <img src="img/Welcome1.jpg" alt="Project image">
+
+        <div class="side">
+            <div class="side-image-row">
+                <img src="img/Welcome4.jpg" alt="Suburbia 4">
+                <img src="img/Welcome1.jpg" alt="Suburbia 1">
+                <img src="img/Welcome2.jpg" alt="Suburbia 2">
+                <img src="img/Welcome3.jpg" alt="Suburbia 3">
             </div>
             <aside>
-                <h3>Welcome to Suburbia!
-                    <a href="https://mjdietz04.itch.io/welcome-to-suburbia" class="projects-btn">Play!</a>
-                </h3>
+                <h3>Welcome to Suburbia!</h3>
                 <p>Unique 3D Psychological Multiplayer Horror Game. Still a work in progress, but features some unique systems and world design!</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://mjdietz04.itch.io/welcome-to-suburbia" class="projects-btn" target="_blank" style="background: #5dade2;">Play!</a>
+                </div>
             </aside>
         </div>
 
         <div class="side">
-            <div class="image-scroller">
-                <img src="img/hC1.jpg" alt="Project image">
-                <img src="img/hC2.jpg" alt="Project image">
+            <div class="side-image-row">
+                <img src="img/hC1.jpg" alt="Harmonic 1">
+                <img src="img/hC2.jpg" alt="Harmonic 2">
+                <img src="img/hC3.jpg" alt="Harmonic 3">
+                <img src="img/hC4.jpg" alt="Harmonic 4">
             </div>
             <aside>
-                <h3>Harmonic Convergence
-                    <a href="https://mjdietz04.itch.io/harmonic-convergence" class="projects-btn">Play!</a>
-                </h3>
+                <h3>Harmonic Convergence</h3>
                 <p>This audio visual project (done in Godot Engine) is a video game experience where you can meet some cool musical characters! All programming, art, animation, sound, music recordings, mixing, etc done by me!</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://mjdietz04.itch.io/harmonic-convergence" class="projects-btn" target="_blank" style="background: #5dade2;">Play!</a>
+                </div>
             </aside>
         </div>
-
-
     </main>
 
     <footer><p>© Max Dietz</p></footer>
+
+    <div id="projectModal" class="modal-overlay">
+        <button class="close-doc" onclick="closeModal()">✕ CLOSE</button>
+        <div class="modal-container" id="modalBody"></div>
+    </div>
+
     <script src="portfolio.js"></script>
 </body>
 </html>

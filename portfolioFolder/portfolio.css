@@ -122,6 +122,7 @@ body::before {
 /* You'll need to change your H1 border so it doesn't disappear */
 .top-bar h1 {
     border: 3px solid white;
+    font-family: 'Orbitron', sans-serif; /* Matching your project titles */
 }
 
 .header-wrap {
@@ -240,6 +241,7 @@ main {
 h2 {
     font-size: 2.5rem;
     margin-left: 10px;
+    font-family: 'Orbitron', sans-serif; /* Matching your project titles */
 }
 
 main h2 {
@@ -634,4 +636,44 @@ footer {
 .side aside h3 {
     margin-top: 0; /* Remove any top margin pushing the name down */
     padding-top: 0;
+}
+/* 1. Add transition to the logo and header so the movement is smooth */
+/* 1. Ensure the logo has a smooth transition for all states */
+.main-logo {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    display: inline-block; /* Ensures the transform has a proper axis to rotate on */
+}
+
+/* 2. Target the logo directly for the hover */
+.main-logo:hover {
+    /* We must keep the original -10deg or tweak it, 
+       otherwise it will jump to 0deg before moving */
+    transform: scale(1.1) rotate(-5deg) translateY(-5px) !important;
+    cursor: pointer;
+    z-index: 1001; /* Brings it above the header bar shadow */
+}
+
+/* 3. The Header Text Hover */
+.header-wrap header:hover h1 {
+    transform: translateY(-3px) rotate(1deg);
+    transition: 0.2s;
+    cursor: default;
+}
+/* 1. Set the transition for the H3 titles */
+.side h3 {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block; /* Essential for the transform to work smoothly */
+    cursor: default;
+}
+
+/* 2. Apply the hover effect */
+.side h3:hover {
+    /* Lifts it up and gives it a slight "active" tilt */
+    transform: translateY(-5px) rotate(-1deg) scale(1.02);
+    color: var(--accent); /* Optional: changes text to your coral red on hover */
+}
+
+/* 3. Ensure the buttons inside the H3 (like in 'About Me') don't get messy */
+.side h3 .projects-btn {
+    vertical-align: middle;
 }
