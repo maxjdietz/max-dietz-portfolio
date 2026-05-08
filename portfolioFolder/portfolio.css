@@ -6,24 +6,11 @@
     --hover-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: var(--bg-color);
-    font-family: 'Courier New', Courier, monospace;
-    scroll-behavior: smooth;
-}
+
 
 /* Header & Nav */
 /* Sticky Nav Logic */
-.top-bar {
-    position: sticky; 
-    top: 0;           /* Sticks to the absolute top of the screen */
-    z-index: 1000;    /* Ensures it stays above all project cards */
-    padding: 15px 0;
-    background-color: var(--bg-color); /* Matches body to hide content scrolling behind */
-    border-bottom: 4px solid black;    /* Adds a "shelf" for the content to slide under */
-}
+
 
 .header-wrap {
     display: flex;
@@ -45,59 +32,121 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
 }
+html {
+    /* Ensures the 'canvas' for the background exists for the whole page */
+    height: 100%;
+    background-color: var(--bg-color); 
+}
+
 body {
+    /* Min-height ensures it covers the screen, but can grow with projects */
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    /* Your texture logic */
     background: linear-gradient(
         rgba(18, 16, 16, 0) 50%, 
         rgba(0, 0, 0, 0.1) 50%
     ), var(--bg-color);
-    background-size: 100% 4px; /* Creates the tiny horizontal lines */
+    background-size: 100% 4px;
     background-attachment: fixed;
+    
+    /* This helps keep the background from 'jumping' on mobile */
+    background-repeat: repeat;
 }
 body::after {
     content: "";
-    position: fixed;
+    position: fixed; /* Keeps the vignette/glow glued to the glass */
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
-    pointer-events: none; /* Let clicks pass through */
+    /* This creates that slight screen-glow/static feel */
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.08) 100%);
+    pointer-events: none;
     z-index: 9999;
 }
 
+/* Remove background from body, keep it only on html */
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+/* Create a dedicated texture layer */
+body::before {
+    content: "";
+    position: fixed; /* Glued to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Sits behind everything */
+    
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none; /* Clicks go through it */
+}
 /* Header & Nav */
 /* Sticky Nav Logic */
+
+
 .top-bar {
     position: sticky; 
-    top: 0;           /* Sticks to the absolute top of the screen */
-    z-index: 1000;    /* Ensures it stays above all project cards */
+    top: 0;
+    z-index: 1000;
     padding: 15px 0;
-    background-color: var(--bg-color); /* Matches body to hide content scrolling behind */
-    border-bottom: 4px solid black;    /* Adds a "shelf" for the content to slide under */
+    
+
+    background: rgba(117, 237, 171, 0.8); 
+    backdrop-filter: blur(5px); 
+    
+    border-bottom: 4px solid black; 
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 4px solid black;
+}
+.top-bar {
+    background: rgba(117, 237, 171, 0.85); /* Your green at 85% opacity */
+    backdrop-filter: blur(10px); /* Blurs the grid texture behind it */
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 4px solid black;
+}
+
+
+
+
+/* You'll need to change your H1 border so it doesn't disappear */
+.top-bar h1 {
+    border: 3px solid white;
 }
 
 .header-wrap {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-left: 20px;
 }
 
 /* Logo Styling - The "Sticker" Look */
 .main-logo {
-    width: 80px;      /* Adjust size as needed */
-    height: 80px;
-    border: 4px solid black;
-    border-radius: 50%; /* Makes it a circle */
+    width: 120px;       /* Increased from 80px */
+    height: 120px;      /* Increased from 80px */
+    border: 5px solid black; /* Slightly thicker border for the larger size */
+    border-radius: 50%; 
     background: white;
-    transform: rotate(-10deg); /* Makes it look like it was slapped on */
-    box-shadow: 4px 4px 0px black;
-    transition: 0.3s;
+    transform: rotate(-10deg); 
+    box-shadow: 6px 6px 0px black; /* Heavier shadow for a bigger "sticker" */
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     object-fit: contain;
+    z-index: 1001; /* Ensure it sits above the nav */
 }
 
 .main-logo:hover {
-    transform: rotate(10deg) scale(1.1); /* Jumps when you hover */
+    transform: rotate(5deg) scale(1.15); /* Slightly more aggressive pop */
     background: var(--accent);
 }
 
@@ -193,6 +242,32 @@ h2 {
     margin-left: 10px;
 }
 
+main h2 {
+    background: black;
+    color: white;
+    display: inline-block; /* Makes the box only as wide as the text */
+    padding: 8px 15px;
+    font-family: 'Orbitron', sans-serif; /* Matching your project titles */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    /* The "Goofy" tilt */
+    transform: rotate(-1.5deg);
+    
+    /* Hard shadow to match the cards */
+    box-shadow: 6px 6px 0px var(--accent); /* Using your coral red for the shadow here! */
+    
+    border: 2px solid black;
+    margin: 40px 0 20px 20px; /* Gives it space from projects above it */
+}
+
+/* Optional: Alternating tilts for a more chaotic look */
+main h2:nth-of-type(even) {
+    transform: rotate(1.5deg);
+    box-shadow: -6px 6px 0px var(--accent);
+}
+
 /* Goofy Project Cards */
 .side {
     background-color: var(--card-bg);
@@ -277,23 +352,6 @@ footer {
     font-weight: bold;
 }
 
-/* Logo Styling - The "Sticker" Look */
-.main-logo {
-    width: 80px;      /* Adjust size as needed */
-    height: 80px;
-    border: 4px solid black;
-    border-radius: 50%; /* Makes it a circle */
-    background: white;
-    transform: rotate(-10deg); /* Makes it look like it was slapped on */
-    box-shadow: 4px 4px 0px black;
-    transition: 0.3s;
-    object-fit: contain;
-}
-
-.main-logo:hover {
-    transform: rotate(10deg) scale(1.1); /* Jumps when you hover */
-    background: var(--accent);
-}
 
 /* Nav Adjustment */
 nav {
