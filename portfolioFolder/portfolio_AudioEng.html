@@ -40,10 +40,12 @@
                 <img src="img/radio4.jpg" alt="Radio 4">
             </div>
             <aside>
-                <h3>Secret Society (Radio 1190, KVCU)
-                    <a href="https://1190.radio/schedule/" class="projects-btn">LISTEN!</a>
-                </h3>
+                <h3>Secret Society (Radio 1190, KVCU)</h3>
                 <p>Secret Society is a Solo Radio Show that I host on KVCU every Friday! It highlights Underground, Post-Hardcore/Emo Punk music! I talk about, and we listen to, anything that I have been listening to throughout the week. I have 40+ episodes that have run.</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://1190.radio/schedule/" class="projects-btn" target="_blank" style="background: #5dade2;">LISTEN!</a>
+                </div>
             </aside>
         </div>
 
@@ -55,10 +57,12 @@
                 <img src="img/SC4.jpg" alt="SC 4">
             </div>
             <aside>
-                <h3>Original Compositions! 
-                    <a href="https://soundcloud.com/max-dietz-442194264" class="projects-btn">PLAY!</a>
-                </h3>
+                <h3>Original Compositions!</h3>
                 <p>I do tons of work in Ableton, especially as a Sound Design teacher! I use lots of varying techniques, including programming my own synthesizers, recording and playing my own instruments, and mixing all of it together!</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://soundcloud.com/max-dietz-442194264" class="projects-btn" target="_blank" style="background: #5dade2;">PLAY!</a>
+                </div>
             </aside>
         </div>
 
@@ -70,10 +74,12 @@
                 <img src="img/P4.jpg" alt="P 4">
             </div>
             <aside>
-                <h3>Peggy and Henry!
-                    <a href="https://vimeo.com/manage/videos/1030525063" class="projects-btn">WATCH!</a>
-                </h3>
+                <h3>Peggy and Henry!</h3>
                 <p>A "Cartoon" where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://vimeo.com/manage/videos/1030525063" class="projects-btn" target="_blank" style="background: #5dade2;">WATCH!</a>
+                </div>
             </aside>
         </div>
 
@@ -85,15 +91,22 @@
                 <img src="img/DS4.jpg" alt="DS 4">
             </div>
             <aside>
-                <h3>Dark Souls 3 Re-Scored
-                    <a href="https://vimeo.com/manage/videos/1026766891" class="projects-btn">WATCH!</a>
-                </h3>
+                <h3>Dark Souls 3 Re-Scored</h3>
                 <p>Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack!</p>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button class="projects-btn" onclick="openModal('radio')">View Docs</button>
+                    <a href="https://vimeo.com/manage/videos/1026766891" class="projects-btn" target="_blank" style="background: #5dade2;">WATCH!</a>
+                </div>
             </aside>
         </div>
     </main>
 
     <footer><p>© Max Dietz</p></footer>
+
+    <div id="projectModal" class="modal-overlay">
+        <button class="close-doc" onclick="closeModal()">✕ CLOSE</button>
+        <div class="modal-container" id="modalBody"></div>
+    </div>
     
     <script src="portfolio.js"></script>
 </body>
