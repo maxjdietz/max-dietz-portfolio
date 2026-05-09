@@ -18,7 +18,7 @@ window.onclick = function(event) {
 const projectData = {
     harmonic: {
         title: "Harmonic Convergence",
-        category: "Game Dev / Audio Programming",
+        category: "Game Dev / AV Programming / ",
         description: "A deep technical exploration into synchronized audio-visuals within the Godot Engine. The project focused on 'Beat Mapping'—where game environment elements react in real-time to specific frequency bands of the soundtrack.",
         process: "The challenge was minimizing latency between the audio server and the GPU. I implemented a custom bus system to analyze peak decibel levels and translate them into shader uniforms.",
         images: ["img/hC1.jpg", "img/hC2.jpg", "img/hC3.jpg"]
@@ -29,6 +29,28 @@ const projectData = {
         description: "Managing a live broadcast environment at KVCU Radio 1190. This involved live mixing, signal chain management, and post-production for archive streaming.",
         process: "The workflow required balancing real-time vocal compression with high-dynamic range post-hardcore tracks. I developed a standardized EQ preset for guest interviews to ensure vocal clarity over heavy instrumentation.",
         images: ["img/radio1.jpg", "img/radio2.jpg", "img/radio3.jpg"]
+    },
+    suburbia: {
+        title: "Welcome to Suburbia",
+        category: "Game Development / Programming / Audio Design",
+        skills: "Gameplay Programming, Procedral Content Generation, Audio Design",
+        engine: "Created in: Godot Engine, Blender, Ableton Live",
+        description: "Welcome to Suburbia! is a 2 player, co-op, online multiplayer psychological horror game about 2 young siblings that are stuck in an infinetly repeating suburban neighborhood. This game features many complex systems, including multiplayer syncronization, procedrally generated content, dynamic sound systems, and a surreal horror experience!",
+        process: "My role for Welcome to Suburbia was lead gameplay programmer and audio director. I was responsible for making the abstraction of an infinite neighborhood using my own displacement algorithm. I also implemented a quest system for progression, and the technical implementation for all puzzles found within the game. I also created, composed, mixed, and programmed all the sound within the game. We currently have a website for Welcome to Suburbia, which can be found at <b><a href=\"https://welcometosuburbia.com/\" target=\"_blank\">www.welcometosuburbia.com</a></b>, where all further documentation is. This game is currently still a work in progress, but was featured at the ATLAS EXPO showcase on the University of Colorado Boulder campus in April.",
+        images: ["img/WTS1.png", "img/WTS2.png", "img/WTS3.png", "img/WTS4.png", "img/WTS5.png", "img/WTS6.png", "img/WTS7.png", "img/WTS8.png"]
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 };
 
@@ -38,15 +60,23 @@ function openModal(id) {
 
     body.innerHTML = `
         <div class="doc-text">
-            <span class="meta">${project.category}</span>
-            <h2>${project.title}</h2>
+            <strong><span class="meta">${project.category}</span></strong>
+            <br><br>
+            <strong><span>${project.skills}</span></strong>
+            <strong><h2>${project.title}</h2></strong>
         </div>
+  
 
         <div class="doc-grid">
             <div class="doc-gallery">
                 <img src="${project.images[0]}" class="large">
                 <img src="${project.images[1]}">
                 <img src="${project.images[2]}">
+                <img src="${project.images[3]}" class="large">
+                <img src="${project.images[4]}">
+                <img src="${project.images[5]}">
+                <img src="${project.images[6]}">
+                <img src="${project.images[7]}">
             </div>
             
             <div class="doc-text">
