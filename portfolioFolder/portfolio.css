@@ -1,10 +1,4 @@
-:root {
-    --bg-color: #75edab;
-    --card-bg: #ffffff;
-    --accent: #ff6b6b; /* A goofy coral red */
-    --shadow: 8px 8px 0px 0px rgba(0,0,0,1);
-    --hover-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
-}
+
 
 
 
@@ -134,21 +128,25 @@ body::before {
 
 /* Logo Styling - The "Sticker" Look */
 .main-logo {
-    width: 120px;       /* Increased from 80px */
-    height: 120px;      /* Increased from 80px */
+    
     border: 5px solid black; /* Slightly thicker border for the larger size */
     border-radius: 50%; 
     background: white;
     transform: rotate(-10deg); 
     box-shadow: 6px 6px 0px black; /* Heavier shadow for a bigger "sticker" */
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    object-fit: contain;
+    /* object-fit: cover; */
     z-index: 1001; /* Ensure it sits above the nav */
 }
 
 .main-logo:hover {
     transform: rotate(5deg) scale(1.15); /* Slightly more aggressive pop */
     background: var(--accent);
+}
+
+.main-logo img{
+    object-fit: cover;
+    
 }
 
 
@@ -505,15 +503,7 @@ footer {
     }
 }
 
-/* APPLYING IT TO THE LOGO */
-.main-logo {
-    /* Your existing styles stay here, but add this line: */
-    animation: goofyPop 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-    
-    /* Ensure it doesn't flicker before starting */
-    opacity: 0; 
-    animation-fill-mode: forwards;
-}
+
 
 /* Full-screen overlay */
 .modal-overlay {
@@ -637,21 +627,9 @@ footer {
     margin-top: 0; /* Remove any top margin pushing the name down */
     padding-top: 0;
 }
-/* 1. Add transition to the logo and header so the movement is smooth */
-/* 1. Ensure the logo has a smooth transition for all states */
-.main-logo {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-    display: inline-block; /* Ensures the transform has a proper axis to rotate on */
-}
 
 /* 2. Target the logo directly for the hover */
-.main-logo:hover {
-    /* We must keep the original -10deg or tweak it, 
-       otherwise it will jump to 0deg before moving */
-    transform: scale(1.1) rotate(-5deg) translateY(-5px) !important;
-    cursor: pointer;
-    z-index: 1001; /* Brings it above the header bar shadow */
-}
+
 
 /* 3. The Header Text Hover */
 .header-wrap header:hover h1 {

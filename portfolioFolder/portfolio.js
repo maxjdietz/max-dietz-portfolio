@@ -21,9 +21,9 @@ const projectData = {
         title: "Secret Society (KVCU Radio 1190)",
         category: "Audio Engineering / Broadcasting",
         skills: "Live Audio Engineering, Radio Broadcasting, Public Speaking, Music Curation",
-        description: "I have a weekly radio show with KVCU Radio 1190 called Secret Society, which highlights underground, punk-adjacent music. I have hosted over 40+ episodes of Secret Society, and I'm currently live every Wednesday from 5-6PM MST, check it out!",
+        description: "I have a weekly radio show with KVCU Radio 1190 called Secret Society, which highlights underground, punk-adjacent music. I have hosted over 40+ episodes of Secret Society, and I'm currently live every Wednesday from 4-5PM MST, check it out!",
         process: "I run this show completely by myself, where I'm in charge of real-time audio systems, live mixing, talk commentary between music, and picking curated music playlists for each episode.",
-        images: ["img/radio1.jpg", "img/radio2.jpg", "img/radio3.jpg"]
+        images: ["img/radio1.jpg", "img/radio2.jpg", "img/radio3.jpg", "img/radio4.jpg", "img/radio5.png", "img/radio6.png", "img/radio7.png", "img/radio8.png"]
     },
     suburbia: {
         title: "Welcome to Suburbia",
