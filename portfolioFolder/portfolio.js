@@ -16,18 +16,13 @@ window.onclick = function(event) {
     }
 }
 const projectData = {
-    harmonic: {
-        title: "Harmonic Convergence",
-        category: "Game Dev / AV Programming / ",
-        description: "A deep technical exploration into synchronized audio-visuals within the Godot Engine. The project focused on 'Beat Mapping'—where game environment elements react in real-time to specific frequency bands of the soundtrack.",
-        process: "The challenge was minimizing latency between the audio server and the GPU. I implemented a custom bus system to analyze peak decibel levels and translate them into shader uniforms.",
-        images: ["img/hC1.jpg", "img/hC2.jpg", "img/hC3.jpg"]
-    },
+
     radio: {
-        title: "Secret Society Radio",
+        title: "Secret Society (KVCU Radio 1190)",
         category: "Audio Engineering / Broadcasting",
-        description: "Managing a live broadcast environment at KVCU Radio 1190. This involved live mixing, signal chain management, and post-production for archive streaming.",
-        process: "The workflow required balancing real-time vocal compression with high-dynamic range post-hardcore tracks. I developed a standardized EQ preset for guest interviews to ensure vocal clarity over heavy instrumentation.",
+        skills: "Live Audio Engineering, Radio Broadcasting, Public Speaking, Music Curation",
+        description: "I have a weekly radio show with KVCU Radio 1190 called Secret Society, which highlights underground, punk-adjacent music. I have hosted over 40+ episodes of Secret Society, and I'm currently live every Wednesday from 5-6PM MST, check it out!",
+        process: "I run this show completely by myself, where I'm in charge of real-time audio systems, live mixing, talk commentary between music, and picking curated music playlists for each episode.",
         images: ["img/radio1.jpg", "img/radio2.jpg", "img/radio3.jpg"]
     },
     suburbia: {
