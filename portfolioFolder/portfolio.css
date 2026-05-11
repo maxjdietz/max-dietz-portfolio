@@ -104,8 +104,7 @@ body::before {
     border-bottom: 4px solid black;
 }
 .top-bar {
-    background: rgba(117, 237, 171, 0.85); /* Your green at 85% opacity */
-    backdrop-filter: blur(10px); /* Blurs the grid texture behind it */
+    background: rgba(117, 237, 171, 0.85); 
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 4px solid black;
 }
@@ -113,7 +112,7 @@ body::before {
 
 
 
-/* You'll need to change your H1 border so it doesn't disappear */
+
 .top-bar h1 {
     border: 3px solid white;
     font-family: 'Orbitron', sans-serif; /* Matching your project titles */
@@ -126,27 +125,63 @@ body::before {
     margin-left: 20px;
 }
 
-/* Logo Styling - The "Sticker" Look */
-.main-logo {
+/* 1. The Container - Now properly sized to 150px */
+.logo-wrapper {
+    position: relative;
+    width: 150px;  /* Match your image width */
+    height: 150px; /* Match your image height */
+    display: inline-block;
+    vertical-align: middle;
     
-    border: 5px solid black; /* Slightly thicker border for the larger size */
+    /* Pushes the "AUDIO ENGINEERING" text away from the logo */
+    margin-right: 30px; 
+    
+    /* Keeps the logo from touching the top or bottom of the green bar */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1001;
+}
+
+/* 2. Unified Image Settings */
+.logo-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    
+    border: 5px solid black;
     border-radius: 50%; 
     background: white;
-    transform: rotate(-10deg); 
-    box-shadow: 6px 6px 0px black; /* Heavier shadow for a bigger "sticker" */
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    /* object-fit: cover; */
-    z-index: 1001; /* Ensure it sits above the nav */
-}
-
-.main-logo:hover {
-    transform: rotate(5deg) scale(1.15); /* Slightly more aggressive pop */
-    background: var(--accent);
-}
-
-.main-logo img{
-    object-fit: cover;
+    box-shadow: 6px 6px 0px black;
     
+    /* We move the rotation here so it doesn't fight the wrapper */
+    transform: rotate(-10deg); 
+    
+    object-fit: contain;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* 3. Hover States */
+.logo-hover {
+    opacity: 0;
+}
+
+.logo-wrapper:hover {
+    /* The whole "sticker" pops up */
+    transform: scale(1.1) rotate(-5deg) translateY(-5px);
+    cursor: pointer;
+}
+
+.logo-wrapper:hover .logo-normal,
+.logo-wrapper:hover .main-logo { /* Targeting both just in case */
+    opacity: 0;
+}
+
+.logo-wrapper:hover .logo-hover {
+    opacity: 1;
 }
 
 

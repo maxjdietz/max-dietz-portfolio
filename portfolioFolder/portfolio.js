@@ -26,12 +26,12 @@ const projectData = {
         images: ["img/radio1.jpg", "img/radio2.jpg", "img/radio3.jpg", "img/radio4.jpg", "img/radio5.png", "img/radio6.png", "img/radio7.png", "img/radio8.png"]
     },
     suburbia: {
-        title: "Welcome to Suburbia",
+        title: "Welcome to Suburbia (Capstone Project)",
         category: "Game Development / Programming / Audio Design",
         skills: "Gameplay Programming, Procedral Content Generation, Audio Design",
         engine: "Created in: Godot Engine, Blender, Ableton Live",
-        description: "Welcome to Suburbia! is a 2 player, co-op, online multiplayer psychological horror game about 2 young siblings that are stuck in an infinetly repeating suburban neighborhood. This game features many complex systems, including multiplayer syncronization, procedrally generated content, dynamic sound systems, and a surreal horror experience!",
-        process: "My role for Welcome to Suburbia was lead gameplay programmer and audio director. I was responsible for making the abstraction of an infinite neighborhood using my own displacement algorithm. I also implemented a quest system for progression, and the technical implementation for all puzzles found within the game. I also created, composed, mixed, and programmed all the sound within the game. We currently have a website for Welcome to Suburbia, which can be found at <b><a href=\"https://welcometosuburbia.com/\" target=\"_blank\">www.welcometosuburbia.com</a></b>, where all further documentation is. This game is currently still a work in progress, but was featured at the ATLAS EXPO showcase on the University of Colorado Boulder campus in April.",
+        description: "Welcome to Suburbia! is a 2 player, co-op, online multiplayer psychological horror game about 2 young siblings that are stuck in an infinitely repeating suburban neighborhood. This game features many complex systems, including multiplayer syncronization, procedrally generated content, dynamic sound systems, and a surreal horror experience!",
+        process: " (CREATED BY: AIDAN RODGERS, MICAH HIGGINS, NOAH WAGNER, MAX DIETZ) My role for Welcome to Suburbia was lead gameplay programmer and audio director. I was responsible for making the abstraction of an infinite neighborhood using my own displacement algorithm. I also implemented a quest system for progression, and the technical implementation for all puzzles found within the game. I also created, composed, mixed, and programmed all the sound within the game. We currently have a website for Welcome to Suburbia, which can be found at <b><a href=\"https://welcometosuburbia.com/\" target=\"_blank\">www.welcometosuburbia.com</a></b>, where all further documentation is. This game is currently still a work in progress, but was featured at the ATLAS EXPO showcase on the University of Colorado Boulder campus in April.",
         images: ["img/WTS1.png", "img/WTS2.png", "img/WTS3.png", "img/WTS4.png", "img/WTS5.png", "img/WTS6.png", "img/WTS7.png", "img/WTS8.png"]
     },
         harmonic: {
@@ -42,6 +42,15 @@ const projectData = {
         description: "Harmonic Convergence is a technical exploration into synchronized audio-visuals within the Godot Engine. Talk to cool characters and set up a jam session!",
         process: "I created every aspect of this project. I did all pixel art and animations in Aseprite, used the Godot Engine to sync all technical functionality, gameplay mechanics, and dialogue manager, then also recorded, mixed, and mastered the soundtrack that plays throughout the game. Controls were mapped to an Xbox controller, and can be played on the web right now at <a href=\"https://mjdietz04.itch.io/harmonic-convergence\" target=\"_blank\">https://mjdietz04.itch.io/harmonic-convergence</a>.",
         images: ["img/hC1.jpg", "img/hC2.jpg", "img/hC3.jpg", "img/hC4.jpg", "img/hC5.png", "img/hC6.png", "img/hC7.png", "img/hC8.png"]
+    },
+    SES: {
+        title: "S.E.S",
+        category: "Game Development / Programming / AV Design",
+        skills: "Gameplay Programming, Lighting and Sound Design, Level Design",
+        engine: "Created in: Godot Engine, Crocotile, Ableton Live",
+        description: " S.E.S is a 3D rogue-like game where you play as a ghost-exterminator. You must clear out each floor from ghost and ghost-bugs with your lazer gun, and survive.",
+        process: "(CREATED BY: ADAM REYES, LOGAN BROWN, MAX DIETZ) S.E.S was our final project for Game Development. I created all gameplay elements, like player control, level progression, enemy AI, combat mechanics, and gameplay loop. I also added all diagetic sound effects. and Although currently a work in progress, you can play the demo here! <a href=\"https://mjdietz04.itch.io/ses\" target=\"_blank\">https://mjdietz04.itch.io/s-e-s</a>",
+        images: ["img/SES1.jpg", "img/SES2.jpg", "img/SES3.jpg", "img/SES4.jpg", "img/SES5.png", "img/SES6.png", "img/SES7.png", "img/SES8.png"]
     }
 };
 
@@ -51,9 +60,12 @@ function openModal(id) {
 
     body.innerHTML = `
         <div class="doc-text">
+        
             <strong><span class="meta">${project.category}</span></strong>
             <br><br>
             <strong><span>${project.skills}</span></strong>
+            <br><br>
+            <strong><span class="meta">${project.engine}</span></strong>
             <strong><h2>${project.title}</h2></strong>
         </div>
   
