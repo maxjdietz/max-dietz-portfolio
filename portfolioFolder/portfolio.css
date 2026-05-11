@@ -683,10 +683,14 @@ footer {
 .side h3:hover {
     /* Lifts it up and gives it a slight "active" tilt */
     transform: translateY(-5px) rotate(-1deg) scale(1.02);
-    color: var(--accent); /* Optional: changes text to your coral red on hover */
+   
 }
 
-/* 3. Ensure the buttons inside the H3 (like in 'About Me') don't get messy */
+
 .side h3 .projects-btn {
     vertical-align: middle;
+}
+
+.about_me_aside{
+    font-size: smaller;
 }

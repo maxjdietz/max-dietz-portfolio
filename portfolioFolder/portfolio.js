@@ -69,6 +69,16 @@ const projectData = {
         description: "The first game I ever made (using Twine). A choose-your-own-adventure game with 5 different endings. Good luck!",
         process: "This is my first game ever made, fully using Twine! It was a fun experiment in choice-based narrative, and I learned a lot about how to use Twine's scripting language to make the game more dynamic. It's a pretty simple game, but I'm proud of it as my first project! You can play it here: <a href=\"https://mjdietz04.itch.io/marlows-missions\" target=\"_blank\">https://mjdietz04.itch.io/marlows-missions</a>",
         images: ["img/Marlow1.png", "img/Marlow2.png", "img/Marlow3.png", "img/Marlow4.png", "img/Marlow5.png", "img/Marlow6.png", "img/Marlow7.png", "img/Marlow8.png"]
+        
+    },
+        Me: {
+        title: "About Me! - Max Dietz",
+        category: "Hello!",
+        skills: "This is me!",
+        engine: "Created in: Boulder, Colorado",
+        description: "Hello! I'm Max Dietz, A recent college graduate obtaining my BS in Creative Technology and Design at CU Boulder with a minor in Computer Science, with further studies in Music Technology. I'm a creative engineer with a focus on audio engineering, game development and computer science. I enjoy all things game dev, whether it be game logic, programming unique and creative systems, creating soundscapes, sound design, music, cool characters, game design, and all in between! I also have a huge passion within audio engineering, whether it be recording and mixing my own music, creating unique digital synthesizers using various DAWs, and hands on experience within real-time performances!",
+        process: "Outside of my work, I enjoy creating music, weight lifting, basketball, video games, working on programming projects, learning new skills, and spending time with my lovely girlfriend, Sena! I'm ambitious and very motivated, I love learning! I love meeting new people! my favorite game is dark souls 3",
+        images: ["img/me1.jpg", "img/me2.jpg", "img/me3.jpg", "img/me4.jpg", "img/me5.jpg", "img/me6.jpg", "img/me7.jpg", "img/me8.jpg"]
     }
 }; 
 
