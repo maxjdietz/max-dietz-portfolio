@@ -91,7 +91,7 @@ const projectData = {
         engine: "Adobe Premiere Pro, Adobe Photoshop, Ableton Live",
         description: "A Cartoon-ish video where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!",
         process: "I had lots of fun making this project! I recorded all the audio using my bass guitar, and then mixed and edited it together in Ableton. I then used Adobe Premiere Pro to edit the video together, and Adobe Photoshop to create the animation frames. It was a fun experiment in using sound design and editing techniques to create a cohesive audio-visual experience!",
-        images: ["img/P1.jpg", "img/P2.jpg", "img/P3.jpg", "img/P4.jpg", "img/P5.jpg", "img/P6.jpg", "img/P7.jpg", "img/P8.jpg"]
+        images: ["img/P1.png", "img/P2.jpg", "img/P3.jpg", "img/P4.jpg", "img/P5.png", "img/P2.jpg", "img/P7.png", "img/P8.jpg"]
         
     },
         DarkSouls: {
@@ -101,7 +101,7 @@ const projectData = {
         engine: "Ableton Live, Audacity, Adobe Premiere Pro",
         description: "Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack!",
         process: "A midterm for a class that I ended up teaching for the last nearly 2 years! We had to take a clip of any video game, strip all the audio, then add all the diagetic and non-diegetic sound back in using our own techniques and mixing! I chose to re-score my favorite game, Dark Souls 3. This project taught me so much about sound design, as this was my first ever sound-related challenge I put on myself. ",
-        images: ["img/DS1.jpg", "img/DS2.jpg", "img/DS3.jpg", "img/DS4.jpg", "img/DS5.jpg", "img/DS6.jpg", "img/DS7.jpg", "img/DS8.jpg"]
+        images: ["img/DS1.jpg", "img/DS2.jpg", "img/DS3.jpg", "img/DS4.jpg", "img/DS5.png", "img/DS6.png", "img/DS7.png", "img/DS8.png"]
         
     },
         Me: {
