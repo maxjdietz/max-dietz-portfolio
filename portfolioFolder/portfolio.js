@@ -132,6 +132,66 @@ const projectData = {
         
     },
 
+        Two: {
+        title: "2x2 Modeling + Constructing Project",
+        skills: "3D Modeling / Graphic Design / Wood Working / Fabrication",
+        engine: "SketchUp, BTU Woodshop",
+        description: "Me and a school friend were tasked to sketch, measure, model, and construct a piece of furniture using only 2x2 wood pieces. ",
+        process: "We ended up going with a end table design, which used proper measurements, screwing techniques, and a good design. We modeled the piece in SketchUp, then used the model to cut and construct the piece in the BTU woodshop. The piece of furniture held both me and my friend (>325 lbs). ",
+        images: ["img/Furn1.png", "img/Furn2.png", "img/Furn3.png", "img/Furn4.png", "img/Furn5.png", "img/Furn6.png", "img/Furn7.png", "img/Furn8.png"]
+        
+    },
+
+        Guitar: {
+        title: "Instrument Holding Rack",
+        skills: "3D Modeling / Wood Working / Fabrication",
+        engine: "SketchUp, BTU Woodshop, my fathers garage",
+        description: "My 3D Modeling class had me model and construct something that held/used an instrument. I ended up creating a 5-instrument electric guitar holding rack, which I still use to this day!",
+        process: "I modeled the rack in SketchUp, then used the model to cut and construct the piece in my fathers garage. It holds 5 electric guitars and basses comfortably.",
+        images: ["img/Form1.png", "img/Form2.png", "img/Form3.png", "img/Form4.png", "img/Form5.png", "img/Form6.png", "img/Form7.png", "img/Form8.png"]
+        
+    },
+
+        IDC: {
+        title: "Handshake Strength Tester",
+        skills: "C++ / Arduino / Electronics / 3D Printing / Fabrication",
+        engine: "OnShape, Arduino IDE, PrusaSlicer",
+        description: "My Physical Computing final was a handshake strength tester. It features pressure sensors that measures strength, connected to LED's that light up based off of a strength threshold. I also 3D printed a cool case for it!",
+        process: "I designed the circuit use in a system from a tutorial on Youtube that used pressure sensors in a completely different way, and slowly evolved the device that combined with a glove. I used OnShape to model the case, PrusaSlicer to slice it, and an Arduino Uno to program the system.",
+        images: ["img/IDC1.png", "img/IDC2.png", "img/IDC3.png", "img/IDC4.png", "img/IDC5.png", "img/IDC6.png", "img/IDC7.png", "img/IDC8.png"]
+        
+    },
+
+        Port: {
+        title: "My Portfolioio Website! (WIP)",
+        skills: "Web Development, UI/UX, Graphic Design",
+        engine: "HTML, CSS, JavaScript",
+        description: "My portfolio website was made from scratch. Always a WIP :)",
+        process: " I use HTML for all text, CSS for style, and Javascript for interactivity/functionality",
+        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        
+    },
+
+        Phone: {
+        title: "Annoying Phone Input",
+        skills: "Web Development, UI/UX",
+        engine: "HTML, CSS, JavaScript",
+        description: "A janky and annoying way to input your phone number, try it out!",
+        process: "I used HTML for the text, CSS for the style, and JavaScript to make it as annoying as possible to input your phone number. I got a C+ on this project, and will probably never update it. blah blah blah",
+        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        
+    },
+
+        Galactic: {
+        title: "Galactic Concert Display",
+        skills: "Web Development, UI/UX",
+        engine: "HTML, CSS",
+        description: "Galactic concert display featuring simple CSS techniques.",
+        process: "HTML for text, CSS for style. I looooove Web Dev guys.",
+        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        
+    },
+
 
     
     Me: {
