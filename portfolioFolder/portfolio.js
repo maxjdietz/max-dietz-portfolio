@@ -193,7 +193,7 @@ const projectData = {
         skills: "This is me!",
         engine: "Created in: Boulder, Colorado",
         description: "Hello! I'm Max Dietz, A recent college graduate obtaining my BS in Creative Technology and Design at CU Boulder with a minor in Computer Science, with further studies in Music Technology. I'm a creative engineer with a focus on audio engineering, game development and computer science. I enjoy all things game dev, whether it be game logic, programming unique and creative systems, creating soundscapes, sound design, music, cool characters, game design, and all in between! I also have a huge passion within audio engineering, whether it be recording and mixing my own music, creating unique digital synthesizers using various DAWs, and hands on experience within real-time performances!",
-        process: "Outside of my work, I enjoy creating music, weight lifting, basketball, video games, working on programming projects, learning new skills, and spending time with my lovely girlfriend, Sena! I'm ambitious and very motivated, I love learning! I love meeting new people! my favorite game is dark souls 3",
+        process: "Outside of my work, I enjoy creating music, weight lifting, basketball, video games, working on programming projects, learning new skills, and spending time with my lovely girlfriend, Sena! I'm ambitious and very motivated, I love learning! I love meeting new people! my favorite game is Dark Souls 3.",
         images: ["img/me1.jpg", "img/me2.jpg", "img/me3.jpg", "img/me4.jpg", "img/me5.jpg", "img/me6.jpg", "img/me7.jpg", "img/me8.jpg"]
     }
 }; 
