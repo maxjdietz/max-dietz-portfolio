@@ -80,14 +80,13 @@ const projectData = {
         engine: "Ableton Live, Logic Pro",
         description: "I do tons of work in Ableton, especially as a Sound Design teacher! I use lots of varying techniques, including programming my own synthesizers, recording and playing my own instruments, and mixing all of it together!",
         process: "Typically, when I'm creating a new track, I listen to a lot of inspiration. Creating video game music involves lots of audio-visual elements, so learning how to envoke a strong emotion through sound that cohesively connects visuals is incredibly important to my work. I love to experiment with new or past programmed synths, recorded instruments, and sound design techniques to create a full sounding track. I have a lot of fun creating music, and I have a lot of tracks that I'm proud of! You can listen to some of my work here: <a href=\"https://soundcloud.com/max-dietz\" target=\"_blank\">https://soundcloud.com/max-dietz</a>",
-        images: ["img/SC1.jpg", "img/SC2.jpg", "img/SC3.jpg", "img/SC4.jpg", "img/SC5.jpg", "img/SC6.jpg", "img/SC7.jpg", "img/SC8.jpg"]
+        images: ["img/MT5.jpg", "img/SC2.jpg", "img/SC3.jpg", "img/SC4.jpg", "img/MT1.jpg", "img/MT2.jpg", "img/MT3.jpg", "img/MT4.jpg"]
         
     },
 
         Peggy: {
         title: "Peggy and Henry!",
-        category: "Sound Design",
-        skills: "Recording, Mixing, Video Editing",
+        skills: "Sound Design / Recording / Mixing /Video Editing",
         engine: "Adobe Premiere Pro, Adobe Photoshop, Ableton Live",
         description: "A Cartoon-ish video where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!",
         process: "I had lots of fun making this project! I recorded all the audio using my bass guitar, and then mixed and edited it together in Ableton. I then used Adobe Premiere Pro to edit the video together, and Adobe Photoshop to create the animation frames. It was a fun experiment in using sound design and editing techniques to create a cohesive audio-visual experience!",
@@ -96,15 +95,36 @@ const projectData = {
     },
         DarkSouls: {
         title: "Dark Souls 3 Re-Scored",
-        category: "Sound Design",
-        skills: "SFX Creation, Mixing, Video Editing",
+        skills: "Sound Design / SFX Creation / Mixing /Video Editing",
         engine: "Ableton Live, Audacity, Adobe Premiere Pro",
         description: "Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack!",
         process: "A midterm for a class that I ended up teaching for the last nearly 2 years! We had to take a clip of any video game, strip all the audio, then add all the diagetic and non-diegetic sound back in using our own techniques and mixing! I chose to re-score my favorite game, Dark Souls 3. This project taught me so much about sound design, as this was my first ever sound-related challenge I put on myself. ",
         images: ["img/DS1.jpg", "img/DS2.jpg", "img/DS3.jpg", "img/DS4.jpg", "img/DS5.png", "img/DS6.png", "img/DS7.png", "img/DS8.png"]
         
     },
-        Me: {
+        MT: {
+        title: "Music Technology Certificate",
+        skills: "Audio Visual / Recording Engineering / Mixing / Composing / Sound Design",
+        engine: "Ableton Live, Audacity, Logic Pro, Pro Tools",
+        description: "I obtained my Cerificate in Music Technology at the University of Colorado Boulder, where I took a variety of classes that taught me skills in audio engineering, music production, sound design, and more!",
+        process: "I took a variety of classes for this certificate, including: Intro to Music Technology, Preparing for Soundcheck, Recording Techniques, Composing at the Computer, and SuperCollider! Many music projects you come across on my website were made in these classes!",
+        images: ["img/MT1.jpg", "img/MT2.jpg", "img/MT3.jpg", "img/MT4.jpg", "img/MT5.jpg", "img/SC2.jpg", "img/SC3.jpg", "img/SC4.jpg"]
+        
+    },
+
+        Lego: {
+        title: "Lego Instructions Modeling",
+        skills: "3D Modeling, Grpahic Design",
+        engine: "SketchUp, Adobe Illustrator",
+        description: "This school project had us create a set of lego instructions from random lego pieces. We had to model each piece in SketchUp, take angled photos to mirror the lego instruction syle, then graphcially represent the instructions in Adobe Illustrator. Lots of fun had with this project!",
+        process: "I took measurements for a variety of lego pieces, and modeled them relative to the measurements in SketchUp. I took angled screenshots using SketchUp, inported them in Illustrator, and used similar Lego font and graphic design techniques to replicate the instructions.",
+        images: ["img/Lego1.png", "img/Lego2.png", "img/Lego3.png", "img/Lego4.png", "img/Lego5.png", "img/Lego6.png", "img/Lego7.png", "img/Lego8.png"]
+        
+    },
+
+
+    
+    Me: {
         title: "About Me! - Max Dietz",
         category: "Hello!",
         skills: "This is me!",
@@ -121,12 +141,9 @@ function openModal(id) {
 
     body.innerHTML = `
         <div class="doc-text">
-        
-            <strong><span class="meta">${project.category}</span></strong>
-            <br><br>
             <strong><span>${project.skills}</span></strong>
             <br><br>
-            <strong><span class="meta">${project.engine}</span></strong>
+            <strong><span class="meta">Made In: ${project.engine}</span></strong>
             <strong><h2>${project.title}</h2></strong>
         </div>
   
