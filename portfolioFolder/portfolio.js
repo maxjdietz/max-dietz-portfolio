@@ -122,6 +122,16 @@ const projectData = {
         
     },
 
+        Graphic: {
+        title: "Graphic Designs",
+        skills: "Graphic Design",
+        engine: "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
+        description: "My school Graphic Design class had us do a variety of projects that taught us the fundamentals of typography, layout, workflow, and arttistic design.",
+        process: "Graphic Design is a great skills for creating good looking documentation, and allows me to appreciate design at it's simplest. My workflow in Illustrator is seamless. Graphic design is not my passion.",
+        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        
+    },
+
 
     
     Me: {
