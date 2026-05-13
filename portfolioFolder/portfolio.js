@@ -168,7 +168,7 @@ const projectData = {
         engine: "HTML, CSS, JavaScript",
         description: "My portfolio website was made from scratch. Always a WIP :)",
         process: " I use HTML for all text, CSS for style, and Javascript for interactivity/functionality",
-        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        images: ["img/Port1.png", "img/Port2.png", "img/Port3.png", "img/Port4.png", "img/Port5.png", "img/Port6.png", "img/Port7.png", "img/Port8.png"]
         
     },
 
@@ -178,7 +178,7 @@ const projectData = {
         engine: "HTML, CSS, JavaScript",
         description: "A janky and annoying way to input your phone number, try it out!",
         process: "I used HTML for the text, CSS for the style, and JavaScript to make it as annoying as possible to input your phone number. I got a C+ on this project, and will probably never update it. blah blah blah",
-        images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
+        images: ["img/Number1.png", "img/Number2.png", "img/Number3.png", "img/Number4.png", "img/Number5.png", "img/Number6.png", "img/Number7.png", "img/Number8.png"]
         
     },
 
