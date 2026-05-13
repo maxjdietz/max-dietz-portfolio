@@ -19,8 +19,7 @@ const projectData = {
 
     radio: {
         title: "Secret Society (KVCU Radio 1190)",
-        category: "Audio Engineering / Broadcasting",
-        skills: "Live Audio Engineering, Radio Broadcasting, Public Speaking, Music Curation",
+        skills: "Live Audio Engineering / Radio Broadcasting / Public Speaking / Music Curation",
         engine: "KVCU Radio 1190",
         description: "I have a weekly radio show with KVCU Radio 1190 called Secret Society, which highlights underground, punk-adjacent music. I have hosted over 40+ episodes of Secret Society, and I'm currently live every Wednesday from 4-5PM MST, check it out!",
         process: "I run this show completely by myself, where I'm in charge of real-time audio systems, live mixing, talk commentary between music, and picking curated music playlists for each episode.",
@@ -28,26 +27,23 @@ const projectData = {
     },
     suburbia: {
         title: "Welcome to Suburbia (Capstone Project)",
-        category: "Game Development / Programming / Audio Design",
-        skills: "Gameplay Programming, Procedral Content Generation, Audio Design",
-        engine: "Created in: Godot Engine, Blender, Ableton Live",
+        skills: "Game Development / Gameplay Programming / Procedural Content Generation / Audio Design",
+        engine: "Godot Engine / Blender / Ableton Live",
         description: "Welcome to Suburbia! is a 2 player, co-op, online multiplayer psychological horror game about 2 young siblings that are stuck in an infinitely repeating suburban neighborhood. This game features many complex systems, including multiplayer syncronization, procedrally generated content, dynamic sound systems, and a surreal horror experience!",
         process: "<strong>(CREATED BY: AIDAN RODGERS, MICAH HIGGINS, NOAH WAGNER, MAX DIETZ)</strong> My role for Welcome to Suburbia was lead gameplay programmer and audio director. I was responsible for making the abstraction of an infinite neighborhood using my own displacement algorithm. I also implemented a quest system for progression, and the technical implementation for all puzzles found within the game. I also created, composed, mixed, and programmed all the sound within the game. We currently have a website for Welcome to Suburbia, which can be found at <b><a href=\"https://welcometosuburbia.com/\" target=\"_blank\">www.welcometosuburbia.com</a></b>, where all further documentation is. This game is currently still a work in progress, but was featured at the ATLAS EXPO showcase on the University of Colorado Boulder campus in April.",
         images: ["img/WTS1.png", "img/WTS2.gif", "img/WTS3.gif", "img/WTS4.png", "img/WTS5.png", "img/WTS6.png", "img/WTS7.png", "img/WTS8.png"]
     },
         harmonic: {
         title: "Harmonic Convergence",
-        category: "Game Development / Programming / Audio Engineering",
-        skills: "Gameplay Programming, Pixel Art and Animation, Recording and Mixing",
-        engine: "Created in: Godot Engine, Aseprite, Ableton Live",
+        skills: "Game Development / Gameplay Programming / Pixel Art and Animation / Recording and Mixing",
+        engine: "Godot Engine / Aseprite / Ableton Live",
         description: "Harmonic Convergence is a technical exploration into synchronized audio-visuals within the Godot Engine. Talk to cool characters and set up a jam session!",
         process: "I created every aspect of this project. I did all pixel art and animations in Aseprite, used the Godot Engine to sync all technical functionality, gameplay mechanics, and dialogue manager, then also recorded, mixed, and mastered the soundtrack that plays throughout the game. Controls were mapped to an Xbox controller, and can be played on the web right now at <a href=\"https://mjdietz04.itch.io/harmonic-convergence\" target=\"_blank\">https://mjdietz04.itch.io/harmonic-convergence</a>.",
         images: ["img/hC1.jpg", "img/hC2.gif", "img/hC3.gif", "img/hC4.jpg", "img/hC5.gif", "img/hC6.jpg", "img/hC7.png", "img/hC8.gif"]
     },
     SES: {
         title: "S.E.S",
-        category: "Game Development / Programming / AV Design",
-        skills: "Gameplay Programming, Lighting and Sound Design, Level Design",
+        skills: "Game Development / Gameplay Programming / AV Design / Level Design",
         engine: "Created in: Godot Engine, Crocotile, Ableton Live, FL Studio",
         description: "S.E.S is a 3D rogue-like game where you play as a ghost-exterminator. You must clear out each floor from ghost and ghost-bugs with your lazer gun, and survive.",
         process: "(CREATED BY: ADAM REYES, LOGAN BROWN, MAX DIETZ) S.E.S was our final project for Game Development. I created all gameplay elements, like player control, level progression, enemy AI, combat mechanics, and gameplay loop. I also added all diagetic sound effects. and Although currently a work in progress, you can play the demo here! <a href=\"https://mjdietz04.itch.io/ses\" target=\"_blank\">https://mjdietz04.itch.io/s-e-s</a>",
@@ -55,8 +51,7 @@ const projectData = {
     },
         Guy: {
         title: "Guy",
-        category: "Game Development / Art / Functionality",
-        skills: "Programming, Pixel Art",
+        skills:  "Game Development / Programming / Pixel Art / Functionality",
         engine: "Created in: Godot Engine, Aseprite",
         description: "Guy is a small art/functionality project I'm working on! It's about a guy that goes around town and does odd jobs. Takes place in the Harmonic Convergence universe!",
         process: "An unfinished project that experimented on pixel art, original character design, and functionility testing. I experimented using tile sets and animation, and will be a unfinished WIP for a while. I will update the documentation and images as I work on it more!",
@@ -64,9 +59,8 @@ const projectData = {
     },
         Marlow: {
         title: "Marlow's Missions!",
-        category: "Game Development",
-        skills: "Choice-Based Narrative, Programming",
-        engine: "Created in: Twine",
+        skills: " Game Development / Choice-Based Narrative / Programming",
+        engine: "Twine",
         description: "The first game I ever made (using Twine). A choose-your-own-adventure game with 5 different endings. Good luck!",
         process: "This is my first game ever made, fully using Twine! It was a fun experiment in choice-based narrative, and I learned a lot about how to use Twine's scripting language to make the game more dynamic. It's a pretty simple game, but I'm proud of it as my first project! You can play it here: <a href=\"https://mjdietz04.itch.io/marlows-missions\" target=\"_blank\">https://mjdietz04.itch.io/marlows-missions</a>",
         images: ["img/Marlow1.png", "img/Marlow2.png", "img/Marlow3.png", "img/Marlow4.png", "img/Marlow5.png", "img/Marlow6.png", "img/Marlow7.png", "img/Marlow8.png"]
@@ -75,9 +69,8 @@ const projectData = {
 
         Comps: {
         title: "Original Compositions",
-        category: "Audio Engineering, Music Production",
-        skills: "Recording, Mixing, Mastering, Composition, Sound Design",
-        engine: "Ableton Live, Logic Pro",
+        skills: "Recording / Mixing / Mastering, Composition / Sound Design",
+        engine: "Ableton Live / Logic Pro",
         description: "I do tons of work in Ableton, especially as a Sound Design teacher! I use lots of varying techniques, including programming my own synthesizers, recording and playing my own instruments, and mixing all of it together!",
         process: "Typically, when I'm creating a new track, I listen to a lot of inspiration. Creating video game music involves lots of audio-visual elements, so learning how to envoke a strong emotion through sound that cohesively connects visuals is incredibly important to my work. I love to experiment with new or past programmed synths, recorded instruments, and sound design techniques to create a full sounding track. I have a lot of fun creating music, and I have a lot of tracks that I'm proud of! You can listen to some of my work here: <a href=\"https://soundcloud.com/max-dietz\" target=\"_blank\">https://soundcloud.com/max-dietz</a>",
         images: ["img/MT5.jpg", "img/SC2.jpg", "img/SC3.jpg", "img/SC4.jpg", "img/MT1.jpg", "img/MT2.jpg", "img/MT3.jpg", "img/MT4.jpg"]
@@ -87,7 +80,7 @@ const projectData = {
         Peggy: {
         title: "Peggy and Henry!",
         skills: "Sound Design / Recording / Mixing /Video Editing",
-        engine: "Adobe Premiere Pro, Adobe Photoshop, Ableton Live",
+        engine: "Adobe Premiere Pro / Adobe Photoshop / Ableton Live",
         description: "A Cartoon-ish video where I used editing techniques, sound design, and animation to create this cool Audio Visual project! All sound (background song + voice lines) come from my bass guitar, and that's it!",
         process: "I had lots of fun making this project! I recorded all the audio using my bass guitar, and then mixed and edited it together in Ableton. I then used Adobe Premiere Pro to edit the video together, and Adobe Photoshop to create the animation frames. It was a fun experiment in using sound design and editing techniques to create a cohesive audio-visual experience!",
         images: ["img/P1.png", "img/P2.jpg", "img/P3.jpg", "img/P4.jpg", "img/P5.png", "img/P2.jpg", "img/P7.png", "img/P8.jpg"]
@@ -96,7 +89,7 @@ const projectData = {
         DarkSouls: {
         title: "Dark Souls 3 Re-Scored",
         skills: "Sound Design / SFX Creation / Mixing /Video Editing",
-        engine: "Ableton Live, Audacity, Adobe Premiere Pro",
+        engine: "Ableton Live / Audacity / Adobe Premiere Pro",
         description: "Re-scoring a boss battle in my favorite video game, Dark Souls 3! I replaced all diagetic and non-diagetic sound with my own sound-effects and soundtrack!",
         process: "A midterm for a class that I ended up teaching for the last nearly 2 years! We had to take a clip of any video game, strip all the audio, then add all the diagetic and non-diegetic sound back in using our own techniques and mixing! I chose to re-score my favorite game, Dark Souls 3. This project taught me so much about sound design, as this was my first ever sound-related challenge I put on myself. ",
         images: ["img/DS1.jpg", "img/DS2.jpg", "img/DS3.jpg", "img/DS4.jpg", "img/DS5.png", "img/DS6.png", "img/DS7.png", "img/DS8.png"]
@@ -105,7 +98,7 @@ const projectData = {
         MT: {
         title: "Music Technology Certificate",
         skills: "Audio Visual / Recording Engineering / Mixing / Composing / Sound Design",
-        engine: "Ableton Live, Audacity, Logic Pro, Pro Tools",
+        engine: "Ableton Live / Audacity / Logic Pro / Pro Tools",
         description: "I obtained my Cerificate in Music Technology at the University of Colorado Boulder, where I took a variety of classes that taught me skills in audio engineering, music production, sound design, and more!",
         process: "I took a variety of classes for this certificate, including: Intro to Music Technology, Preparing for Soundcheck, Recording Techniques, Composing at the Computer, and SuperCollider! Many music projects you come across on my website were made in these classes!",
         images: ["img/MT1.jpg", "img/MT2.jpg", "img/MT3.jpg", "img/MT4.jpg", "img/MT5.jpg", "img/SC2.jpg", "img/SC3.jpg", "img/SC4.jpg"]
@@ -114,8 +107,8 @@ const projectData = {
 
         Lego: {
         title: "Lego Instructions Modeling",
-        skills: "3D Modeling, Grpahic Design",
-        engine: "SketchUp, Adobe Illustrator",
+        skills: "3D Modeling / Graphic Design",
+        engine: "SketchUp / Adobe Illustrator",
         description: "This school project had us create a set of lego instructions from random lego pieces. We had to model each piece in SketchUp, take angled photos to mirror the lego instruction syle, then graphcially represent the instructions in Adobe Illustrator. Lots of fun had with this project!",
         process: "I took measurements for a variety of lego pieces, and modeled them relative to the measurements in SketchUp. I took angled screenshots using SketchUp, inported them in Illustrator, and used similar Lego font and graphic design techniques to replicate the instructions.",
         images: ["img/Lego1.png", "img/Lego2.png", "img/Lego3.png", "img/Lego4.png", "img/Lego5.png", "img/Lego6.png", "img/Lego7.png", "img/Lego8.png"]
@@ -125,7 +118,7 @@ const projectData = {
         Graphic: {
         title: "Graphic Designs",
         skills: "Graphic Design",
-        engine: "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
+        engine: "Adobe Illustrator / Adobe Photoshop / Adobe InDesign",
         description: "My school Graphic Design class had us do a variety of projects that taught us the fundamentals of typography, layout, workflow, and arttistic design.",
         process: "Graphic Design is a great skills for creating good looking documentation, and allows me to appreciate design at it's simplest. My workflow in Illustrator is seamless. Graphic design is not my passion.",
         images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
@@ -135,7 +128,7 @@ const projectData = {
         Two: {
         title: "2x2 Modeling + Constructing Project",
         skills: "3D Modeling / Graphic Design / Wood Working / Fabrication",
-        engine: "SketchUp, BTU Woodshop",
+        engine: "SketchUp / BTU Woodshop",
         description: "Me and a school friend were tasked to sketch, measure, model, and construct a piece of furniture using only 2x2 wood pieces. ",
         process: "We ended up going with a end table design, which used proper measurements, screwing techniques, and a good design. We modeled the piece in SketchUp, then used the model to cut and construct the piece in the BTU woodshop. The piece of furniture held both me and my friend (>325 lbs). ",
         images: ["img/Furn1.png", "img/Furn2.png", "img/Furn3.png", "img/Furn4.png", "img/Furn5.png", "img/Furn6.png", "img/Furn7.png", "img/Furn8.png"]
@@ -145,7 +138,7 @@ const projectData = {
         Guitar: {
         title: "Instrument Holding Rack",
         skills: "3D Modeling / Wood Working / Fabrication",
-        engine: "SketchUp, BTU Woodshop, my fathers garage",
+        engine: "SketchUp / BTU Woodshop / my fathers garage",
         description: "My 3D Modeling class had me model and construct something that held/used an instrument. I ended up creating a 5-instrument electric guitar holding rack, which I still use to this day!",
         process: "I modeled the rack in SketchUp, then used the model to cut and construct the piece in my fathers garage. It holds 5 electric guitars and basses comfortably.",
         images: ["img/Form1.png", "img/Form2.png", "img/Form3.png", "img/Form4.png", "img/Form5.png", "img/Form6.png", "img/Form7.png", "img/Form8.png"]
@@ -164,8 +157,8 @@ const projectData = {
 
         Port: {
         title: "My Portfolioio Website! (WIP)",
-        skills: "Web Development, UI/UX, Graphic Design",
-        engine: "HTML, CSS, JavaScript",
+        skills: "Web Development / UI/UX / Graphic Design",
+        engine: "HTML / CSS / JavaScript",
         description: "My portfolio website was made from scratch. Always a WIP :)",
         process: " I use HTML for all text, CSS for style, and Javascript for interactivity/functionality",
         images: ["img/Port1.png", "img/Port2.png", "img/Port3.png", "img/Port4.png", "img/Port5.png", "img/Port6.png", "img/Port7.png", "img/Port8.png"]
@@ -174,8 +167,8 @@ const projectData = {
 
         Phone: {
         title: "Annoying Phone Input",
-        skills: "Web Development, UI/UX",
-        engine: "HTML, CSS, JavaScript",
+        skills: "Web Development / UI/UX",
+        engine: "HTML / CSS / JavaScript",
         description: "A janky and annoying way to input your phone number, try it out!",
         process: "I used HTML for the text, CSS for the style, and JavaScript to make it as annoying as possible to input your phone number. I got a C+ on this project, and will probably never update it. blah blah blah",
         images: ["img/Number1.png", "img/Number2.png", "img/Number3.png", "img/Number4.png", "img/Number5.png", "img/Number6.png", "img/Number7.png", "img/Number8.png"]
@@ -184,8 +177,8 @@ const projectData = {
 
         Galactic: {
         title: "Galactic Concert Display",
-        skills: "Web Development, UI/UX",
-        engine: "HTML, CSS",
+        skills: "Web Development / UI/UX",
+        engine: "HTML / CSS",
         description: "Galactic concert display featuring simple CSS techniques.",
         process: "HTML for text, CSS for style. I looooove Web Dev guys.",
         images: ["img/Graphic1.png", "img/Graphic2.png", "img/Graphic3.png", "img/Graphic4.png", "img/Graphic5.png", "img/Graphic6.png", "img/Graphic7.png", "img/Graphic8.png"]
@@ -195,7 +188,7 @@ const projectData = {
 
     
     Me: {
-        title: "About Me! - Max Dietz",
+        title: "About Me - Max Dietz!",
         category: "Hello!",
         skills: "This is me!",
         engine: "Created in: Boulder, Colorado",
